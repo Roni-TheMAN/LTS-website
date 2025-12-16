@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-slate-950 text-slate-50 font-sans antialiased;
+  background-image: radial-gradient(circle at 20% 20%, rgba(11,95,255,0.12), transparent 25%),
+    radial-gradient(circle at 80% 0%, rgba(59,130,246,0.15), transparent 30%),
+    linear-gradient(180deg, rgba(15,23,42,0.95) 0%, rgba(6,11,23,0.95) 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+a {
+  @apply text-slate-100;
+}
+
+a:hover {
+  @apply text-white;
+}
+
+.card-surface {
+  @apply bg-slate-900/70 border border-slate-800/80 rounded-2xl shadow-[0_25px_60px_rgba(0,0,0,0.35)];
+}
+
+.section-container {
+  @apply max-w-6xl mx-auto px-6 md:px-10;
+}
+
+.glass-panel {
+  @apply bg-white/5 backdrop-blur-xl border border-white/5 shadow-glow;
+}
+
+.tag {
+  @apply inline-flex items-center rounded-full bg-blue-500/10 text-blue-300 px-3 py-1 text-xs font-semibold uppercase tracking-wide;
+}
+
+.input {
+  @apply w-full rounded-xl border border-slate-800 bg-slate-900/70 px-4 py-3 text-sm text-slate-100 placeholder:text-slate-500 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-blue-500 px-4 py-3 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(37,99,235,0.35)] transition hover:from-blue-500 hover:to-blue-400;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl bg-slate-800 px-4 py-3 text-sm font-semibold text-slate-100 border border-slate-700 hover:border-slate-500;
+}
+
+.badge-soft {
+  @apply inline-flex items-center gap-2 rounded-lg bg-slate-800/80 px-3 py-1 text-xs text-slate-200 border border-slate-700/60;
+}
+
+.text-muted {
+  @apply text-slate-400;
+}
+
+.grid-bg {
+  background-image: linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
