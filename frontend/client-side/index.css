@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* Tailwind v4: override built-in palette tokens */
+@theme {
+    --color-blue-50:  #f2fbff;
+    --color-blue-100: #e6f7ff;
+    --color-blue-200: #c8eeff;
+    --color-blue-300: #9de1fb;
+    --color-blue-400: #7fd3f2;
+    --color-blue-500: #66c2ea;
+
+    --color-blue-600: #46a7d5; /* logo primary */
+
+    /*--color-blue-600: #55b7e5; !* logo primary  OG*!*/
+
+    --color-blue-700: #1f4c7a; /* logo navy */
+    --color-blue-800: #14385c;
+    --color-blue-900: #0d243c;
+    --color-blue-950: #071727;
+}

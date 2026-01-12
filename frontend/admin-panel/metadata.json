@@ -1,0 +1,5 @@
+{
+  "name": "LTS Admin Panel",
+  "description": "A comprehensive, high-fidelity admin panel for managing products, orders, stripe audits, and keycards, featuring a Shadcn UI aesthetic.",
+  "requestFramePermissions": []
+}
