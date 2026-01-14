@@ -2,12 +2,12 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js",
     "start": "node server.js",
-    "seed:admin": "node seed-admin.js",
-    "dev:ngrok": "concurrently \"pnpm run dev\" \"npx ngrok http 5001\""
+    "build": "echo \"no build step\"",
+    "seed:admin": "node seed-admin.js"
 
   },
   "keywords": [],

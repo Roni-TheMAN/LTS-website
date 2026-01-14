@@ -27,12 +27,13 @@ function getMediaBase(apiBase: string) {
      */
     const env = getEnv();
     const base =
-        env.VITE_PUBLIC_MEDIA_BASE_URL ||
-        env.VITE_MEDIA_BASE_URL ||
-        env.VITE_PUBLIC_API_BASE_URL ||
-        env.VITE_API_BASE_URL ||
-        apiBase ||
-        "http://localhost:5001";
+        // env.VITE_PUBLIC_MEDIA_BASE_URL ||
+        // env.VITE_MEDIA_BASE_URL ||
+        // env.VITE_PUBLIC_API_BASE_URL ||
+        // env.VITE_API_BASE_URL ||
+        // apiBase ||
+        // "http://localhost:5001" ||
+        "https://api.legacytechsol.com";
 
     return trimTrailingSlashes(base);
 }

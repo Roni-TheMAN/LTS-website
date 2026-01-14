@@ -37,7 +37,7 @@ const CheckoutForm = () => {
 
 
     const fetchClientSecret = useCallback(() => {
-        return fetch(`${import.meta.env.VITE_PUBLIC_API_BASE_URL}/create-checkout-session`, {
+        return fetch(`${import.meta.env.VITE_ADMIN_API_BASE_URL}/create-checkout-session`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ items }),
@@ -74,7 +74,7 @@ const Return: React.FC = () => {
     useEffect(() => {
         if (!sessionId) return;
 
-        const url = `${import.meta.env.VITE_PUBLIC_API_BASE_URL}/session-status?session_id=${encodeURIComponent(sessionId)}`;
+        const url = `${import.meta.env.VITE_ADMIN_API_BASE_URL}/session-status?session_id=${encodeURIComponent(sessionId)}`;
 
         fetch(url, { method: "GET" })
             .then((res) => {
